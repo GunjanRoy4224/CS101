@@ -1,0 +1,23 @@
+#include<simplecpp>
+#include<algorithm>
+using namespace std;
+main_program{
+    int N;
+    cin>>N;
+    int i=0;
+    int arr[16];
+    while(N>0){
+        arr[i] = N%16;
+        N=N/16;
+        i+=1;
+    }
+     reverse(arr, arr +i);
+    
+    for (int j=0;j<i;j++) {
+        if(arr[j]>9){
+        cout <<char(55+arr[j]); }
+           else{ cout<<arr[j];
+           }
+    }
+    
+}
